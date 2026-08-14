@@ -586,6 +586,600 @@
       </p>
     </details>
     <details>
+      <summary><span data-lang="cn">你们做店铺全托管运营吗？</span><span data-lang="en">Do you run stores end-to-end?</span><span data-lang="ru">Вы — агентство по ведению магазинов?</span></summary>
+      <p>
+        <span data-lang="cn">是的 —— 我们是俄罗斯本土的店铺运营团队，把俄罗斯这一端完整做起来：商品卡与 SEO、站内广告、客服、申诉、退货、每周报表。但和被骗子做烂的"代运营"不同：不要求转移账号，不碰您的货款，不承诺销售额。账号、商品和钱始终归您。</span>
+        <span data-lang="en">Yes — we are an on-the-ground Russian operations team and we run the Russian side end-to-end: listings and SEO, on-platform ads, support, appeals, returns, weekly reporting. Unlike the scam-tainted "代运营" pattern: no account transfer, we never touch your revenue, no sales promises. The account, goods and money stay yours.</span>
+        <span data-lang="ru">Да — мы полноценно ведём магазины на Wildberries и Ozon: карточки и SEO, внутренняя реклама, поддержка, апелляции, возвраты, еженедельная отчётность. Но не так, как испорченное мошенниками «代运营»: мы не просим передать аккаунт, не трогаем вашу выручку и не обещаем объёмы продаж. Кабинет, товар и деньги всегда остаются вашими.</span>
+      </p>
+    </details> html>
+<!--
+  САЙТ АГЕНТСТВА · СТИЛИСТИКА ПРЕЗЕНТАЦИИ ВЛАДЫ (STORM style: фиолет #6C5CE0, лаванда, белые карточки)
+  ─────────────────────────────────────────────────────────────────────────────
+  • Название AMURBRIDGE и WeChat ID amurbridge уже вписаны. Если возьмёте другое имя:
+    Ctrl+H → «AMURBRIDGE» → новое имя, «amurbridge» → новый ID.
+  • Осталось заполнить: [[ИП/ООО]] и QR-код WeChat (файл img/qr.png + блок ЗАМЕНИ-QR).
+  • Почта hello@amurbridge.com вписана; телефона и цен на сайте нет — решение Влады/Влада 14.08.
+  • Фото кейсов лежат в папке img/ рядом — на хостинг загружать ВСЮ папку сайта
+    (index.html + img/), инструкция в КАК_РАЗВЕРНУТЬ.md.
+  • Три языка, китайский по умолчанию, определяется по браузеру посетителя.
+-->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AMURBRIDGE — 俄罗斯本土电商运营支持 · Wildberries / Ozon</title>
+<meta name="description" content="俄罗斯本土团队，为中国卖家处理 WB/Ozon 的俄罗斯端工作：俄语对账、罚款申诉、EAC 认证、母语客服、退货处理。免费店铺快速诊断。">
+<style>
+  :root{
+    --violet:#6C5CE0; --violet-deep:#4B3FD6; --violet-dark:#3B2E8A;
+    --ink:#16141F; --ink2:#1A1A2E; --grey:#68667A; --grey2:#5B6472;
+    --lav-page:#F8F7FD; --lav:#F3F1FF; --lav2:#EDEBFB; --line:#E9E7F5; --line2:#DDDCEF;
+    --white:#FFFFFF;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto;}}
+  html,body{margin:0;padding:0;background:var(--white);}
+  body{font-family:"Segoe UI",Arial,"Microsoft YaHei","PingFang SC",system-ui,sans-serif;color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px;}
+  section{padding:68px 0;}
+  h1{font-size:clamp(30px,4.8vw,50px);line-height:1.13;margin:0 0 18px;font-weight:800;letter-spacing:-.015em;}
+  h2{font-size:clamp(25px,3.4vw,36px);line-height:1.18;margin:0 0 12px;font-weight:800;letter-spacing:-.012em;}
+  h3{font-size:17px;margin:0 0 7px;font-weight:700;}
+  p{margin:0 0 12px;font-size:15.5px;}
+  .hl{color:var(--violet);font-style:normal;}
+  .eyebrow{font-size:12px;letter-spacing:.22em;color:var(--violet);font-weight:700;margin:0 0 14px;text-transform:uppercase;}
+  .lede{font-size:clamp(15.5px,2.2vw,18px);color:var(--grey);max-width:46em;}
+  .grid{display:grid;gap:16px;}
+  .g2{grid-template-columns:repeat(auto-fit,minmax(290px,1fr));}
+  .g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+  .g4{grid-template-columns:repeat(auto-fit,minmax(215px,1fr));}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:0 8px 26px rgba(76,63,214,.06);}
+  .card.flat{box-shadow:none;background:var(--lav-page);}
+  .pill{display:inline-block;background:var(--lav2);color:var(--violet-deep);font-size:11.5px;font-weight:700;padding:6px 13px;border-radius:20px;letter-spacing:.06em;text-transform:uppercase;}
+  .pill b{color:var(--ink2);letter-spacing:0;text-transform:none;font-size:12.5px;}
+  .numc{width:34px;height:34px;border-radius:50%;background:var(--violet);color:#fff;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;flex:none;}
+  .cnum{font-size:15px;font-weight:800;color:var(--violet);}
+  ul{margin:0;padding-left:18px;} li{margin:6px 0;font-size:15px;} li::marker{color:var(--violet);}
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 8px 26px rgba(76,63,214,.06);}
+  table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:640px;}
+  th{background:var(--lav);text-align:left;padding:11px 14px;font-size:11.5px;letter-spacing:.08em;color:var(--violet-deep);border-bottom:1px solid var(--line2);text-transform:uppercase;}
+  td{padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top;}
+  tr:last-child td{border-bottom:0;}
+  td:first-child{font-weight:700;}
+  .fixme{background:#FFF3CD;border:1px solid #E0C36A;border-radius:6px;padding:1px 7px;font-weight:700;color:#7A5B00;font-size:.92em;}
+  /* верх */
+  .top{position:sticky;top:0;z-index:99;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  .top .wrap{display:flex;align-items:center;gap:12px;padding-top:11px;padding-bottom:11px;flex-wrap:wrap;}
+  .brand{font-weight:800;font-size:17px;color:var(--ink);letter-spacing:.04em;margin-right:auto;}
+  .brand span{color:var(--violet);}
+  .brand small{display:block;font-weight:600;font-size:10px;color:var(--grey);letter-spacing:.14em;}
+  .lang button{font:inherit;font-size:13px;font-weight:700;padding:6px 12px;border-radius:8px;border:1px solid var(--line2);background:#fff;color:var(--grey2);cursor:pointer;margin-left:4px;}
+  .lang button.on{background:var(--violet);color:#fff;border-color:var(--violet);}
+  .cta-s{display:inline-block;background:var(--violet);color:#fff;font-weight:700;font-size:13.5px;padding:9px 18px;border-radius:10px;text-decoration:none;white-space:nowrap;}
+  /* геро */
+  .hero{padding:72px 0 64px;background:linear-gradient(180deg,var(--lav-page) 0%,#fff 100%);}
+  .hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:44px;align-items:center;}
+  .cta{display:inline-block;background:var(--violet);color:#fff;font-weight:800;font-size:16px;padding:14px 28px;border-radius:12px;text-decoration:none;box-shadow:0 10px 24px rgba(108,92,224,.35);}
+  .cta.ghost{background:#fff;color:var(--violet-deep);border:2px solid var(--lav2);margin-left:10px;box-shadow:none;}
+  .hero-note{font-size:13.5px;color:var(--grey);margin-top:14px;}
+  .gradpanel{background:radial-gradient(120% 90% at 20% 10%,#A9A0F0 0%,#8578E6 45%,var(--violet-deep) 100%);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:16px;min-height:380px;}
+  .gradpanel .tagw{background:#fff;border-radius:26px;padding:11px 20px;font-weight:700;font-size:14px;color:var(--ink);align-self:flex-start;box-shadow:0 6px 18px rgba(30,20,90,.25);}
+  .gradpanel .fill{flex:1;}
+  .wcard{background:#fff;border-radius:16px;padding:18px 20px;box-shadow:0 10px 26px rgba(30,20,90,.28);}
+  .wcard .nm{font-weight:800;font-size:19px;letter-spacing:.04em;}
+  .wcard .sub{color:var(--grey);font-size:13px;margin-top:2px;border-bottom:1px solid var(--line);padding-bottom:9px;margin-bottom:9px;}
+  .wcard .row{font-size:14px;}
+  .wcard .row b{color:var(--violet-deep);}
+  .chips{display:grid;grid-template-columns:1fr 1fr;gap:7px 14px;margin-top:18px;}
+  .chip{font-size:13.5px;color:var(--ink2);display:flex;gap:8px;align-items:baseline;}
+  .chip::before{content:"●";color:var(--violet);font-size:9px;flex:none;}
+  /* секции-варианты */
+  .alt{background:var(--lav-page);}
+  .grad-sec{background:radial-gradient(140% 120% at 15% 0%,#9C92EC 0%,#7367DE 45%,var(--violet-dark) 100%);color:#fff;}
+  .grad-sec .eyebrow{color:#D9D4FA;}
+  .grad-sec h2{color:#fff;}
+  .grad-sec .lede{color:#E2DEFB;}
+  .statbig{font-size:clamp(34px,4.6vw,52px);font-weight:800;line-height:1.05;color:var(--violet);letter-spacing:-.02em;font-variant-numeric:tabular-nums;}
+  .stat-lbl{font-size:13.5px;color:var(--grey);margin-top:6px;}
+  .case{display:grid;grid-template-columns:1.05fr 1fr;gap:26px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 28px;box-shadow:0 8px 26px rgba(76,63,214,.06);margin-bottom:18px;align-items:center;}
+  .case:nth-child(even){grid-template-columns:1fr 1.05fr;}
+  .case:nth-child(even) .ctxt{order:2;}
+  .case:nth-child(even) .cimg{order:1;}
+  .metrics{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+  .m{background:var(--lav);border:1px solid var(--line2);border-radius:10px;padding:7px 12px;font-size:13px;font-weight:700;color:var(--violet-deep);font-variant-numeric:tabular-nums;}
+  .cimg{display:grid;gap:10px;}
+  .cimg img{width:100%;border-radius:12px;border:1px solid var(--line);display:block;}
+  .cimg .two{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:start;}
+  .honest{background:var(--lav);border:1px solid var(--line2);border-radius:16px;padding:20px 24px;display:flex;gap:16px;align-items:flex-start;}
+  .honest .ex{width:40px;height:40px;border-radius:50%;background:#fff;color:var(--violet);font-weight:800;font-size:20px;display:flex;align-items:center;justify-content:center;flex:none;box-shadow:0 4px 12px rgba(76,63,214,.15);}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;}
+  .price-card{display:flex;flex-direction:column;border-top:4px solid var(--violet);}
+  .price-card .p{font-size:25px;font-weight:800;color:var(--ink);margin:8px 0 2px;font-variant-numeric:tabular-nums;}
+  .price-card .per{font-size:13px;color:var(--grey);margin-bottom:10px;}
+  .price-card ul{flex:1;}
+  details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 20px;margin-bottom:10px;box-shadow:0 4px 14px rgba(76,63,214,.04);}
+  summary{font-weight:700;font-size:15.5px;cursor:pointer;color:var(--ink2);}
+  details p{margin:10px 0 0;font-size:14.5px;color:var(--grey2);}
+  .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:8px;}
+  .cbox{background:var(--lav);border-radius:14px;padding:15px 18px;}
+  .cbox .k{font-size:10.5px;letter-spacing:.2em;color:var(--violet-deep);font-weight:700;margin-bottom:5px;text-transform:uppercase;}
+  .cbox .v{font-size:18px;font-weight:800;word-break:break-all;color:var(--ink);}
+  .qr{background:var(--lav);border:2px dashed var(--line2);border-radius:14px;min-height:160px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:13px;color:var(--grey);padding:12px;}
+  .fincard{background:#fff;border-radius:22px;padding:40px 44px;box-shadow:0 20px 50px rgba(30,20,90,.30);max-width:760px;margin:0 auto;}
+  footer{background:var(--ink2);color:#A7A3BE;font-size:13px;padding:24px 0;}
+  a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--violet);outline-offset:2px;}
+  [data-lang]{display:none;}
+  body.ru [data-lang="ru"], body.en [data-lang="en"], body.cn [data-lang="cn"]{display:revert;}
+  span[data-lang], strong[data-lang], small[data-lang], em[data-lang], b[data-lang]{display:none;}
+  body.ru span[data-lang="ru"], body.en span[data-lang="en"], body.cn span[data-lang="cn"],
+  body.ru strong[data-lang="ru"], body.en strong[data-lang="en"], body.cn strong[data-lang="cn"],
+  body.ru small[data-lang="ru"], body.en small[data-lang="en"], body.cn small[data-lang="cn"],
+  body.ru em[data-lang="ru"], body.en em[data-lang="en"], body.cn em[data-lang="cn"],
+  body.ru b[data-lang="ru"], body.en b[data-lang="en"], body.cn b[data-lang="cn"]{display:inline;}
+  @media (max-width:860px){
+    .hero .wrap{grid-template-columns:1fr;}
+    .case,.case:nth-child(even){grid-template-columns:1fr;}
+    .case:nth-child(even) .ctxt{order:1;} .case:nth-child(even) .cimg{order:2;}
+    section{padding:46px 0;}
+    .cta.ghost{margin-left:0;margin-top:10px;}
+    .brand small{display:none;}
+  }
+</style>
+</head>
+<body class="cn">
+
+<!-- ═══ ШАПКА ═══ -->
+<div class="top">
+  <div class="wrap">
+    <div class="brand">AMUR<span>BRIDGE</span>
+      <small><span data-lang="cn">俄罗斯本土运营支持 · WB / OZON</span><span data-lang="en">RUSSIA-SIDE OPERATIONS · WB / OZON</span><span data-lang="ru">РОССИЙСКАЯ СТОРОНА · WB / OZON</span></small>
+    </div>
+    <div class="lang">
+      <button onclick="setLang('cn')" id="b-cn" class="on">中文</button>
+      <button onclick="setLang('en')" id="b-en">EN</button>
+      <button onclick="setLang('ru')" id="b-ru">РУ</button>
+    </div>
+    <a class="cta-s" href="#contact"><span data-lang="cn">免费诊断</span><span data-lang="en">Free audit</span><span data-lang="ru">Бесплатный аудит</span></a>
+  </div>
+</div>
+
+<!-- ═══ ГЕРО ═══ -->
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow"><span data-lang="cn">俄罗斯本土团队 · WILDBERRIES 与 OZON</span><span data-lang="en">On-the-ground team in Russia · WB &amp; Ozon</span><span data-lang="ru">Локальная команда в России для Wildberries и Ozon</span></p>
+      <h1>
+        <span data-lang="cn">我们不替您运营店铺<br>我们把俄罗斯那一端<em class="hl">整体</em>处理好</span>
+        <span data-lang="en">We don't run your store for you.<br>We handle the Russian side — <em class="hl">all of it</em>.</span>
+        <span data-lang="ru">Мы не ведём ваш магазин вместо вас.<br>Мы закрываем российскую сторону <em class="hl">целиком</em></span>
+      </h1>
+      <p class="lede">
+        <span data-lang="cn">只做中国团队做不了的那一半：俄语对账、罚款申诉、合规认证、母语客服、退货处理。</span>
+        <span data-lang="en">We do exactly the half your Chinese team cannot: settlement reconciliation, fine appeals, certification, native-language support, returns.</span>
+        <span data-lang="ru">Делаем ровно ту половину работы, которую китайская команда сделать не может: сверка отчётов, оспаривание штрафов, сертификация, поддержка на русском, возвраты.</span>
+      </p>
+      <div style="margin-top:20px;">
+        <a class="cta" href="#contact"><span data-lang="cn">发店铺链接 → 免费诊断</span><span data-lang="en">Send store link → free audit</span><span data-lang="ru">Ссылка на магазин → бесплатный аудит</span></a>
+        <a class="cta ghost" href="#cases"><span data-lang="cn">查看案例</span><span data-lang="en">See cases</span><span data-lang="ru">Смотреть кейсы</span></a>
+      </div>
+      <p class="hero-note">
+        <span data-lang="cn">三天内返回一份带具体金额的问题清单。免费，无任何承诺，不需要后台权限。</span>
+        <span data-lang="en">Within three days you get a list of concrete issues with rouble amounts. Free, no strings, no dashboard access needed.</span>
+        <span data-lang="ru">Через три дня вернём список конкретных проблем с суммами в рублях. Бесплатно, без обязательств и без доступа в кабинет.</span>
+      </p>
+      <div class="chips">
+        <div class="chip"><span data-lang="cn">对账与追回多扣款</span><span data-lang="en">Reconciliation &amp; refunds</span><span data-lang="ru">Сверка отчётов и возврат списаний</span></div>
+        <div class="chip"><span data-lang="cn">罚款申诉</span><span data-lang="en">Fine appeals</span><span data-lang="ru">Оспаривание штрафов</span></div>
+        <div class="chip"><span data-lang="cn">退货接收与处理</span><span data-lang="en">Returns handling</span><span data-lang="ru">Возвраты: приём и решение</span></div>
+        <div class="chip"><span data-lang="cn">俄语母语客服</span><span data-lang="en">Native RU support</span><span data-lang="ru">Клиентская поддержка на русском</span></div>
+        <div class="chip"><span data-lang="cn">商品卡设计与 SEO</span><span data-lang="en">Listings &amp; SEO</span><span data-lang="ru">Оформление и SEO карточек</span></div>
+        <div class="chip"><span data-lang="cn">站内广告</span><span data-lang="en">On-platform ads</span><span data-lang="ru">Внутренняя реклама</span></div>
+        <div class="chip"><span data-lang="cn">竞品与类目分析</span><span data-lang="en">Niche analysis</span><span data-lang="ru">Анализ конкурентов и ниши</span></div>
+        <div class="chip"><span data-lang="cn">每周数据报表</span><span data-lang="en">Weekly report</span><span data-lang="ru">Еженедельный отчёт с цифрами</span></div>
+      </div>
+    </div>
+    <div class="gradpanel">
+      <div class="tagw"><span data-lang="cn">Wildberries 与 Ozon 增长服务</span><span data-lang="en">Growth on Wildberries &amp; Ozon</span><span data-lang="ru">Продвижение на Wildberries и Ozon</span></div>
+      <div class="fill"></div>
+      <div class="wcard">
+        <div class="nm">AMURBRIDGE · 黑龙桥</div>
+        <div class="sub"><span class="fixme">[[ИП/ООО]]</span> · <span data-lang="cn">俄罗斯</span><span data-lang="en">Russia</span><span data-lang="ru">Россия</span></div>
+        <div class="row"><b>WeChat</b> amurbridge &nbsp;·&nbsp; <b>Email</b> hello@amurbridge.com</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ КТО МЫ (слайд 2 презентации) ═══ -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow"><span data-lang="cn">我们是谁</span><span data-lang="en">Who we are</span><span data-lang="ru">Кто мы?</span></p>
+    <h2><span data-lang="cn">30+ 个店铺，为客户带来 <em class="hl">3 亿₽+</em> 净利润</span><span data-lang="en">30+ stores launched and <em class="hl">300M+ ₽</em> net profit for clients</span><span data-lang="ru">30+ запущенных кабинетов и <em class="hl">300+ млн ₽</em> чистой прибыли клиентам</span></h2>
+    <div style="height:14px"></div>
+    <div class="grid g2">
+      <div class="card">
+        <p class="eyebrow" style="margin-bottom:6px;"><span data-lang="cn">项目负责人</span><span data-lang="en">Head of projects</span><span data-lang="ru">Руководитель проектов</span></p>
+        <h3 style="font-size:19px;"><span data-lang="cn">弗拉季斯拉夫 · 萨波日尼科夫</span><span data-lang="en">Vladislav Sapozhnikov</span><span data-lang="ru">Владислав Сапожников</span></h3>
+        <ul style="font-size:14.5px;">
+          <li><span data-lang="cn">行业经验 <strong>6 年以上</strong></span><span data-lang="en"><strong>6+ years</strong> in marketplaces</span><span data-lang="ru">Общий опыт работы более <strong>6 лет</strong></span></li>
+          <li><span data-lang="cn">亲自操盘 <strong>30+ 个店铺</strong>，其中 12 个从零起步</span><span data-lang="en">Personally ran <strong>30+ stores</strong>, 12 from zero</span><span data-lang="ru">Лично работал более чем с <strong>30 кабинетами</strong>, 12 из них — запуск с нуля</span></li>
+          <li><span data-lang="cn">累计为客户创造 <strong>3 亿₽+ 净利润</strong></span><span data-lang="en">Delivered <strong>300M+ ₽ net profit</strong> to clients</span><span data-lang="ru">Совокупно принёс более <strong>300 млн ₽ чистой прибыли</strong></span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="eyebrow" style="margin-bottom:6px;"><span data-lang="cn">运营负责人</span><span data-lang="en">Head of operations</span><span data-lang="ru">Руководитель операций</span></p>
+        <h3 style="font-size:19px;"><span data-lang="cn">弗拉季斯拉娃 · 谢马金娜</span><span data-lang="en">Vladislava Semakina</span><span data-lang="ru">Владислава Семакина</span></h3>
+        <ul style="font-size:14.5px;">
+          <li><span data-lang="cn">行业经验 <strong>4 年以上</strong></span><span data-lang="en"><strong>4+ years</strong> of experience</span><span data-lang="ru">Общий опыт работы более <strong>4 лет</strong></span></li>
+          <li><span data-lang="cn">管理广告预算最高 <strong>每月 1600 万₽</strong></span><span data-lang="en">Ad budget under management up to <strong>16M ₽/month</strong></span><span data-lang="ru">Управление до <strong>16 млн ₽/мес</strong> рекламного бюджета</span></li>
+          <li><span data-lang="cn">把 <strong>70+ 个商品</strong>做进类目前 5</span><span data-lang="en"><strong>70+ products</strong> taken to category top-5</span><span data-lang="ru">Вывод в ТОП-5 категории более <strong>70 товаров</strong></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ПРОБЛЕМЫ КИТАЙСКОЙ СТОРОНЫ (слайд 3 презентации) ═══ -->
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow"><span data-lang="cn">中国卖家的处境</span><span data-lang="en">The Chinese side</span><span data-lang="ru">Китайская сторона</span></p>
+    <h2><span data-lang="cn">中国卖家面临哪些<em class="hl">问题</em></span><span data-lang="en">The <em class="hl">problems</em> the Chinese side runs into</span><span data-lang="ru">С какими <em class="hl">проблемами</em> сталкивается китайская сторона</span></h2>
+    <div style="height:14px"></div>
+    <div class="grid g3">
+      <div class="card">
+        <div style="display:flex;gap:12px;align-items:center;margin-bottom:8px;"><div class="numc">1</div><h3 style="margin:0;"><span data-lang="cn">语言障碍</span><span data-lang="en">Language barrier</span><span data-lang="ru">Языковой барьер</span></h3></div>
+        <p style="color:var(--grey);font-size:14px;margin:0;">
+          <span data-lang="cn">机器翻译扭曲术语和语义，降低沟通的准确性和内容质量</span>
+          <span data-lang="en">Machine translation distorts terms and meaning, degrading both communication and content quality</span>
+          <span data-lang="ru">Машинный перевод искажает термины и смыслы, снижая точность коммуникации и качество контента</span>
+        </p>
+      </div>
+      <div class="card">
+        <div style="display:flex;gap:12px;align-items:center;margin-bottom:8px;"><div class="numc">2</div><h3 style="margin:0;"><span data-lang="cn">不了解市场特性</span><span data-lang="en">Market blind spots</span><span data-lang="ru">Незнание рыночной специфики</span></h3></div>
+        <p style="color:var(--grey);font-size:14px;margin:0;">
+          <span data-lang="cn">很难自行跟踪俄罗斯的需求趋势和买家行为</span>
+          <span data-lang="en">Hard to track Russian demand trends and buyer behaviour on your own</span>
+          <span data-lang="ru">Сложно самостоятельно отслеживать тренды спроса и поведение российских покупателей</span>
+        </p>
+      </div>
+      <div class="card">
+        <div style="display:flex;gap:12px;align-items:center;margin-bottom:8px;"><div class="numc">3</div><h3 style="margin:0;"><span data-lang="cn">分析工具用不上</span><span data-lang="en">Analytics out of reach</span><span data-lang="ru">Недоступность аналитики</span></h3></div>
+        <p style="color:var(--grey);font-size:14px;margin:0;">
+          <span data-lang="cn">市场分析与数据化服务只有俄语版本</span>
+          <span data-lang="en">Analytics and data services exist only in Russian-language versions</span>
+          <span data-lang="ru">Сервисы аналитики и оцифровки данных существуют только в русскоязычной адаптации</span>
+        </p>
+      </div>
+      <div class="card">
+        <div style="display:flex;gap:12px;align-items:center;margin-bottom:8px;"><div class="numc">4</div><h3 style="margin:0;"><span data-lang="cn">广告算法复杂</span><span data-lang="en">Complex ad algorithms</span><span data-lang="ru">Сложность алгоритмов рекламы</span></h3></div>
+        <p style="color:var(--grey);font-size:14px;margin:0;">
+          <span data-lang="cn">WB 站内广告投放需要非常本地化的专业知识</span>
+          <span data-lang="en">On-platform WB advertising takes specific local know-how</span>
+          <span data-lang="ru">Внутренняя настройка рекламы на WB требует специфических локальных знаний</span>
+        </p>
+      </div>
+      <div class="card">
+        <div style="display:flex;gap:12px;align-items:center;margin-bottom:8px;"><div class="numc">5</div><h3 style="margin:0;"><span data-lang="cn">与承包商沟通难</span><span data-lang="en">Contractor communication</span><span data-lang="ru">Коммуникация с подрядчиками</span></h3></div>
+        <p style="color:var(--grey);font-size:14px;margin:0;">
+          <span data-lang="cn">时差和本地通讯工具拖慢日常协作</span>
+          <span data-lang="en">Time-zone gaps and local messengers slow day-to-day work</span>
+          <span data-lang="ru">Разница часовых поясов и локальные мессенджеры замедляют оперативную работу</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ УСЛУГИ ═══ -->
+<section id="services">
+  <div class="wrap">
+    <p class="eyebrow"><span data-lang="cn">服务模块</span><span data-lang="en">Services</span><span data-lang="ru">Услуги</span></p>
+    <h2><span data-lang="cn">我们<em class="hl">做什么</em></span><span data-lang="en">What <em class="hl">we do</em></span><span data-lang="ru">Что мы <em class="hl">делаем</em></span></h2>
+    <div style="height:14px"></div>
+    <div class="grid g3">
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;"><h3><span data-lang="cn">俄语对账与罚款申诉</span><span data-lang="en">Reconciliation &amp; appeals</span><span data-lang="ru">Сверка отчётов и апелляции</span></h3><span class="cnum">01</span></div>
+        <p style="color:var(--grey);font-size:14px;">
+          <span data-lang="cn">逐项核对每周结算报表，找出重复扣款，在 7 天窗口内提交申诉。</span>
+          <span data-lang="en">Weekly settlement review, double-charge detection, appeals filed within the 7-day window.</span>
+          <span data-lang="ru">Разбор еженедельных отчётов, поиск двойных списаний, апелляции в 7-дневное окно.</span>
+        </p>
+        <span class="pill"><span data-lang="cn">解决 <b>把多扣的钱拿回来</b></span><span data-lang="en">Solves <b>recovers wrong deductions</b></span><span data-lang="ru">Решает <b>возвращаем лишние списания</b></span></span>
+      </div>
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;"><h3><span data-lang="cn">会卖货的商品卡</span><span data-lang="en">Listings that sell</span><span data-lang="ru">Карточка, которая продаёт</span></h3><span class="cnum">02</span></div>
+        <p style="color:var(--grey);font-size:14px;">
+          <span data-lang="cn">不是翻译，而是销售型包装：内容规划、商业术语、关键词。</span>
+          <span data-lang="en">Not translation — commercial packaging: content plan, sales terminology, keywords.</span>
+          <span data-lang="ru">Не перевод, а продающее оформление — разработка контент-плана, коммерческая терминология и ключевые запросы.</span>
+        </p>
+        <span class="pill"><span data-lang="cn">解决 <b>转化率增长</b></span><span data-lang="en">Solves <b>conversion growth</b></span><span data-lang="ru">Решает <b>рост конверсии</b></span></span>
+      </div>
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;"><h3><span data-lang="cn">买家支持</span><span data-lang="en">Customer support</span><span data-lang="ru">Поддержка покупателей</span></h3><span class="cnum">03</span></div>
+        <p style="color:var(--grey);font-size:14px;">
+          <span data-lang="cn">差评处理、退货沟通、回答买家问题。</span>
+          <span data-lang="en">Negative-review handling, returns dialogue, answering buyer questions.</span>
+          <span data-lang="ru">Работа с негативными отзывами, диалог по возвратам, ответы на вопросы.</span>
+        </p>
+        <span class="pill"><span data-lang="cn">解决 <b>评分与流量不掉</b></span><span data-lang="en">Solves <b>rating &amp; traffic hold</b></span><span data-lang="ru">Решает <b>рейтинг и трафик не падают</b></span></span>
+      </div>
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;"><h3><span data-lang="cn">退货处理</span><span data-lang="en">Returns</span><span data-lang="ru">Возвраты</span></h3><span class="cnum">04</span></div>
+        <p style="color:var(--grey);font-size:14px;">
+          <span data-lang="cn">接收、分拣、判断重新上架还是销毁。</span>
+          <span data-lang="en">Receiving, sorting, restock-or-dispose decisions.</span>
+          <span data-lang="ru">Приём, сортировка, решение вернуть в оборот или утилизировать.</span>
+        </p>
+        <span class="pill"><span data-lang="cn">解决 <b>退货成本可控</b></span><span data-lang="en">Solves <b>return costs contained</b></span><span data-lang="ru">Решает <b>стоимость возвратов под контролем</b></span></span>
+      </div>
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;"><h3><span data-lang="cn">站内广告投放（控制 ДРР）</span><span data-lang="en">On-platform ads within target ad-share</span><span data-lang="ru">Настройка внутренней рекламы в рамках ДРР</span></h3><span class="cnum">05</span></div>
+        <p style="color:var(--grey);font-size:14px;">
+          <span data-lang="cn">投放管理、寻找精准流量、保持目标排名。</span>
+          <span data-lang="en">Campaign management, targeted traffic, holding the positions that matter.</span>
+          <span data-lang="ru">Ведение кампаний, поиск целевого трафика, удержание нужных позиций.</span>
+        </p>
+        <span class="pill"><span data-lang="cn">解决 <b>广告费不白烧</b></span><span data-lang="en">Solves <b>budget stops burning</b></span><span data-lang="ru">Решает <b>бюджет не сгорает впустую</b></span></span>
+      </div>
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;"><h3><span data-lang="cn">店铺数据化</span><span data-lang="en">Dashboard digitisation</span><span data-lang="ru">Оцифровка кабинета</span></h3><span class="cnum">06</span></div>
+        <p style="color:var(--grey);font-size:14px;">
+          <span data-lang="cn">库存、价格与全部关键指标，每周固定报表。</span>
+          <span data-lang="en">Stock, prices and all key metrics — a fixed weekly report.</span>
+          <span data-lang="ru">Остатки, цены и все ключевые показатели. Отчёт на еженедельной основе.</span>
+        </p>
+        <span class="pill"><span data-lang="cn">解决 <b>全面托管而非零散服务</b></span><span data-lang="en">Solves <b>full ownership, not piecework</b></span><span data-lang="ru">Решает <b>полноценное ведение, а не набор услуг</b></span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ КЕЙСЫ ═══ -->
+<section class="alt" id="cases">
+  <div class="wrap">
+    <p class="eyebrow"><span data-lang="cn">团队成果</span><span data-lang="en">Track record</span><span data-lang="ru">Результаты команды</span></p>
+    <h2><span data-lang="cn">来自<em class="hl">真实项目</em>的数字</span><span data-lang="en">Numbers from <em class="hl">real projects</em></span><span data-lang="ru">Цифры с <em class="hl">реальных</em> проектов</span></h2>
+    <p class="lede"><span data-lang="cn">以下截图均来自真实项目的卖家后台与分析系统。</span><span data-lang="en">All screenshots come from the seller dashboards and analytics of real projects.</span><span data-lang="ru">Все скриншоты — из кабинетов и аналитики реальных проектов.</span></p>
+    <div class="grid g3" style="margin:22px 0 26px;">
+      <div class="card"><div class="statbig">+120%</div><div class="stat-lbl"><span data-lang="cn">合作第一个月订单增长（客户案例）</span><span data-lang="en">orders in the first month of work (client case)</span><span data-lang="ru">к заказам в первый месяц работы (кейс клиента)</span></div></div>
+      <div class="card"><div class="statbig">+57%</div><div class="stat-lbl"><span data-lang="cn">合作第一个月销售额增长（客户案例）</span><span data-lang="en">revenue in the first month of work (client case)</span><span data-lang="ru">к выручке в первый месяц работы (кейс клиента)</span></div></div>
+      <div class="card"><div class="statbig">270 <span style="font-size:22px;">млн ₽</span></div><div class="stat-lbl"><span data-lang="cn">我们托管的店铺月流水规模（起）</span><span data-lang="en">monthly turnover of stores we run (from)</span><span data-lang="ru">оборот кабинетов, которые ведём (от, в месяц)</span></div></div>
+    </div>
+
+    <div class="case">
+      <div class="ctxt">
+        <span class="pill"><span data-lang="cn">案例 01 · 女装</span><span data-lang="en">Case 01 · Apparel</span><span data-lang="ru">Кейс 01 · Одежда</span></span>
+        <h3 style="margin-top:10px;font-size:19px;"><span data-lang="cn">牛仔裤：冲进类目前列</span><span data-lang="en">Jeans: into the category top</span><span data-lang="ru">Джинсы: вывод товара в топ</span></h3>
+        <p style="color:var(--grey);font-size:14.5px;">
+          <span data-lang="cn">接手时：商品卡关键词不排名，内容与目标人群不符，尺码表粗糙。我们重新定位卖点与人群、重排内容漏斗、A/B 测试、重做 SEO 与尺码表。</span>
+          <span data-lang="en">At start: no keyword ranking, content missed the audience, rough sizing chart. We repositioned the USP, rebuilt the funnel, ran A/B tests, redid SEO and sizing.</span>
+          <span data-lang="ru">На старте: карточка не ранжируется по нужным запросам, контент мимо ЦА, размерная сетка не проработана. Определили УТП и ЦА, пересобрали воронку, A/B-тесты, новое SEO и размерная сетка.</span>
+        </p>
+        <div class="metrics">
+          <span class="m"><span data-lang="cn">价格 ×2</span><span data-lang="en">price ×2</span><span data-lang="ru">цена ×2</span></span>
+          <span class="m">CTR 2,2% → 6,5%</span>
+          <span class="m"><span data-lang="cn">签收率 +6%</span><span data-lang="en">buy-out +6%</span><span data-lang="ru">выкуп +6%</span></span>
+          <span class="m"><span data-lang="cn">毛利率 27%</span><span data-lang="en">margin 27%</span><span data-lang="ru">маржа 27%</span></span>
+          <span class="m">8 <span data-lang="cn">百万₽/月</span><span data-lang="en">M ₽/mo</span><span data-lang="ru">млн ₽/мес</span></span>
+        </div>
+      </div>
+      <div class="cimg">
+        <img src="img/case1_1.jpg" alt="Динамика заказов">
+        <div class="two"><img src="img/case1_2.jpg" alt="Карточка товара"><img src="img/case1_4.jpg" alt="Инфографика"></div>
+        <div class="two"><img src="img/case1_3.jpg" alt="Новые цвета модели"><img src="img/case1_5.jpg" alt="Инфографика товара"></div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="ctxt">
+        <span class="pill"><span data-lang="cn">案例 02 · 应季商品</span><span data-lang="en">Case 02 · Seasonal</span><span data-lang="ru">Кейс 02 · Сезонный товар</span></span>
+        <h3 style="margin-top:10px;font-size:19px;"><span data-lang="cn">多色T恤合并链接，吃透一个季节</span><span data-lang="en">Colour-merged tees: squeezing the season</span><span data-lang="ru">Склейка футболок: отработать сезон на максимум</span></h3>
+        <p style="color:var(--grey);font-size:14.5px;">
+          <span data-lang="cn">全新商品，无销售历史。类目与竞品分析找出"跑量色"，以它带动整个合并链接的流量与转化。峰值日订单 +305%。</span>
+          <span data-lang="en">Brand-new items, zero history. Niche analysis found the "runner" colour; it pulled traffic for the whole merged listing. Peak day: orders +305%.</span>
+          <span data-lang="ru">Товары-новинки без истории. Анализ ниши определил «ходовой» цвет — через него разогнали всю склейку. Пик: +305% к заказам за день.</span>
+        </p>
+        <div class="metrics">
+          <span class="m"><span data-lang="cn">峰值订单 +305%</span><span data-lang="en">peak +305%</span><span data-lang="ru">пик +305% заказов</span></span>
+          <span class="m"><span data-lang="cn">新品从零启动</span><span data-lang="en">cold start</span><span data-lang="ru">запуск с нуля</span></span>
+        </div>
+      </div>
+      <div class="cimg">
+        <img src="img/case2_2.jpg" alt="Заказы против остатков">
+        <div class="two"><img src="img/case2_1.jpg" alt="Динамика склейки" style="align-self:center;"><img src="img/case2_3.jpg" alt="Фото товара"></div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="ctxt">
+        <span class="pill"><span data-lang="cn">案例 03 · 家居</span><span data-lang="en">Case 03 · Home</span><span data-lang="ru">Кейс 03 · Товары для дома</span></span>
+        <h3 style="margin-top:10px;font-size:19px;"><span data-lang="cn">普通垃圾桶做到月净利 100 万₽</span><span data-lang="en">An ordinary bin to 1M ₽ net a month</span><span data-lang="ru">Обычное мусорное ведро — на 1 млн ₽ чистой прибыли в месяц</span></h3>
+        <p style="color:var(--grey);font-size:14.5px;">
+          <span data-lang="cn">把商品卡"重新包装"：演示使用场景和室内效果，买家下单前就知道买到什么 —— 转化率上升。目前所有核心词稳定在前 20。</span>
+          <span data-lang="en">We "re-packaged" the listing: usage scenarios, interior shots — buyers see what they get before ordering, conversion grows. Now top-20 on every core query.</span>
+          <span data-lang="ru">«Переупаковали» карточку: сценарии использования и вид в интерьере — покупатель заранее понимает, что берёт, конверсия растёт. Товар в топ-20 по всем основным запросам.</span>
+        </p>
+        <div class="metrics">
+          <span class="m"><span data-lang="cn">所有核心词前 20</span><span data-lang="en">top-20 all queries</span><span data-lang="ru">топ-20 по всем запросам</span></span>
+          <span class="m"><span data-lang="cn">销售额 250万₽+/月</span><span data-lang="en">2.5M+ ₽/mo revenue</span><span data-lang="ru">выручка от 2,5 млн ₽/мес</span></span>
+          <span class="m"><span data-lang="cn">净利 100万₽+/月</span><span data-lang="en">1M+ ₽/mo net</span><span data-lang="ru">чистая прибыль 1 млн+ ₽/мес</span></span>
+        </div>
+      </div>
+      <div class="cimg">
+        <div class="two"><img src="img/case3_1.jpg" alt="Карточка товара"><img src="img/case3_2.jpg" alt="Вид в интерьере"></div>
+        <img src="img/case3_3.jpg" alt="Показатели карточки">
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="ctxt">
+        <span class="pill"><span data-lang="cn">案例 04 · OZON</span><span data-lang="en">Case 04 · Ozon</span><span data-lang="ru">Кейс 04 · Ozon</span></span>
+        <h3 style="margin-top:10px;font-size:19px;"><span data-lang="cn">1000+ SKU 的 Ozon 店铺：第一个月 +32,79%</span><span data-lang="en">Ozon store with 1000+ SKUs: +32.79% in month one</span><span data-lang="ru">Кабинет Ozon с 1000+ товарами: +32,79% в первый месяц</span></h3>
+        <p style="color:var(--grey);font-size:14.5px;">
+          <span data-lang="cn">大型店铺的系统化托管：第一个月订单 +32,79%，进入类目最佳店铺前 25。头部商品月销售额 100 万₽起。</span>
+          <span data-lang="en">Systematic management at scale: orders +32.79% in the first month, top-25 stores of the category. Best SKUs from 1M ₽/month.</span>
+          <span data-lang="ru">Системное ведение большого кабинета: +32,79% к заказам в первый месяц, топ-25 лучших кабинетов категории. Лучшие товары — от 1 млн ₽/мес.</span>
+        </p>
+        <div class="metrics">
+          <span class="m"><span data-lang="cn">订单 +32,79%</span><span data-lang="en">orders +32.79%</span><span data-lang="ru">заказы +32,79%</span></span>
+          <span class="m"><span data-lang="cn">类目前 25 店铺</span><span data-lang="en">top-25 of category</span><span data-lang="ru">топ-25 кабинетов категории</span></span>
+        </div>
+      </div>
+      <div class="cimg">
+        <img src="img/case4_2.jpg" alt="Динамика кабинета Ozon">
+        <div class="two"><img src="img/case4_1.jpg" alt="Рост заказов" style="align-self:center;"><img src="img/case4_3.jpg" alt="Показатели кабинета"></div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="ctxt">
+        <span class="pill"><span data-lang="cn">案例 05 · 反季销售</span><span data-lang="en">Case 05 · Off-season</span><span data-lang="ru">Кейс 05 · Сезонник круглый год</span></span>
+        <h3 style="margin-top:10px;font-size:19px;"><span data-lang="cn">牛仔裙：应季商品全年在卖</span><span data-lang="en">Denim skirt: a seasonal item selling all year</span><span data-lang="ru">Джинсовая юбка: сезонный товар продаётся круглогодично</span></h3>
+        <p style="color:var(--grey);font-size:14.5px;">
+          <span data-lang="cn">靠内容规划实现全年销售：每季重做 SEO 与定位，商品不再"歇业"。</span>
+          <span data-lang="en">A content plan keeps it selling year-round: SEO and positioning rebuilt every season — the item never "closes".</span>
+          <span data-lang="ru">Контент-план держит продажи весь год: каждый сезон — пересборка SEO и позиционирования, товар не «останавливается».</span>
+        </p>
+        <div class="metrics">
+          <span class="m"><span data-lang="cn">全年销售</span><span data-lang="en">sells year-round</span><span data-lang="ru">продажи круглый год</span></span>
+        </div>
+      </div>
+      <div class="cimg">
+        <img src="img/case5_2.jpg" alt="Динамика продаж юбки">
+        <div class="two"><img src="img/case5_3.jpg" alt="Фото товара"><img src="img/case5_1.jpg" alt="Показатели" style="align-self:center;"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ ПРОЗРАЧНОСТЬ ═══ -->
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow"><span data-lang="cn">合作条款</span><span data-lang="en">How we work</span><span data-lang="ru">Условия работы</span></p>
+    <h2><span data-lang="cn">每个环节都<em class="hl">透明</em></span><span data-lang="en"><em class="hl">Transparent</em> at every step</span><span data-lang="ru">Работаем <em class="hl">прозрачно</em> — на каждом этапе</span></h2>
+    <div style="height:14px"></div>
+    <div class="grid g4">
+      <div class="card">
+        <div class="cnum" style="margin-bottom:8px;">01</div>
+        <h3 style="font-size:15.5px;"><span data-lang="cn">店铺账号始终归您</span><span data-lang="en">The account stays yours</span><span data-lang="ru">Кабинет всегда остаётся вашим</span></h3>
+        <p style="color:var(--grey);font-size:13.5px;"><span data-lang="cn">我们仅获得操作权限，账号完全在您的控制之下。</span><span data-lang="en">We get operator access only — ownership and control stay with you.</span><span data-lang="ru">Доступ выдаётся нам как операторам — аккаунт полностью в вашем владении.</span></p>
+        <span class="pill"><span data-lang="cn">保证 <b>账号归您控制</b></span><span data-lang="en">Guarantee <b>your control</b></span><span data-lang="ru">Гарантия <b>кабинет под вашим контролем</b></span></span>
+      </div>
+      <div class="card">
+        <div class="cnum" style="margin-bottom:8px;">02</div>
+        <h3 style="font-size:15.5px;"><span data-lang="cn">广告费从您的余额支付</span><span data-lang="en">Ads paid from your balance</span><span data-lang="ru">Рекламу оплачиваете со своего баланса</span></h3>
+        <p style="color:var(--grey);font-size:13.5px;"><span data-lang="cn">广告支出直接从您的平台余额扣除，无中间账户。</span><span data-lang="en">Ad spend goes straight from your platform balance — no intermediaries.</span><span data-lang="ru">Расходы списываются напрямую с вашего баланса, без посредников.</span></p>
+        <span class="pill"><span data-lang="cn">保证 <b>资金不经我们手</b></span><span data-lang="en">Guarantee <b>money never passes us</b></span><span data-lang="ru">Гарантия <b>оплата с вашего баланса</b></span></span>
+      </div>
+      <div class="card">
+        <div class="cnum" style="margin-bottom:8px;">03</div>
+        <h3 style="font-size:15.5px;"><span data-lang="cn">每个操作都可见</span><span data-lang="en">Every action visible</span><span data-lang="ru">Доступ открыт — видите каждое действие</span></h3>
+        <p style="color:var(--grey);font-size:13.5px;"><span data-lang="cn">后台完整操作历史随时可查。</span><span data-lang="en">Full history of operations, auditable any time.</span><span data-lang="ru">Полная история операций доступна вам в любой момент.</span></p>
+        <span class="pill"><span data-lang="cn">保证 <b>操作全程可见</b></span><span data-lang="en">Guarantee <b>full visibility</b></span><span data-lang="ru">Гарантия <b>видимость каждого действия</b></span></span>
+      </div>
+      <div class="card">
+        <div class="cnum" style="margin-bottom:8px;">04</div>
+        <h3 style="font-size:15.5px;"><span data-lang="cn">按季度签约，随时退出</span><span data-lang="en">Quarterly contract, exit any time</span><span data-lang="ru">Договор поквартально, выход в любой момент</span></h3>
+        <p style="color:var(--grey);font-size:13.5px;"><span data-lang="cn">无长期绑定，交接条款写进合同。</span><span data-lang="en">No long lock-ins; handover is contractual.</span><span data-lang="ru">Без долгосрочных обязательств, передача дел прописана в договоре.</span></p>
+        <span class="pill"><span data-lang="cn">保证 <b>无长期绑定</b></span><span data-lang="en">Guarantee <b>no lock-in</b></span><span data-lang="ru">Гарантия <b>без долгих обязательств</b></span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ПРОЦЕСС ═══ -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow"><span data-lang="cn">合作流程</span><span data-lang="en">Getting started</span><span data-lang="ru">Как начать</span></p>
+    <h2><span data-lang="cn">第一步<em class="hl">免费</em></span><span data-lang="en">The first step is <em class="hl">free</em></span><span data-lang="ru">Первый шаг <em class="hl">бесплатный</em></span></h2>
+    <div style="height:14px"></div>
+    <div class="steps">
+      <div class="card">
+        <div style="display:flex;gap:12px;align-items:center;margin-bottom:8px;"><div class="numc">1</div><span class="pill"><span data-lang="cn">第一步 · 3 天 · 免费</span><span data-lang="en">Step 1 · 3 days · free</span><span data-lang="ru">Шаг 1 · 3 дня · бесплатно</span></span></div>
+        <h3><span data-lang="cn">店铺快速诊断</span><span data-lang="en">Express store audit</span><span data-lang="ru">Экспресс-аудит магазина</span></h3>
+        <p style="color:var(--grey);font-size:14px;margin:0;">
+          <span data-lang="cn">您发店铺链接，我们返回具体问题与解决方案清单。不需要后台权限。</span>
+          <span data-lang="en">You send a store link; we return concrete problems and fixes. No dashboard access needed.</span>
+          <span data-lang="ru">Вы даёте ссылку на магазин. Мы возвращаем список конкретных проблем и решений. Доступ в кабинет не нужен.</span>
+        </p>
+      </div>
+      <div class="card">
+        <div style="display:flex;gap:12px;align-items:center;margin-bottom:8px;"><div class="numc">2</div><span class="pill"><span data-lang="cn">第二步 · 30 分钟</span><span data-lang="en">Step 2 · 30 minutes</span><span data-lang="ru">Шаг 2 · 30 минут</span></span></div>
+        <h3><span data-lang="cn">视频会议逐条讲解</span><span data-lang="en">A call with the findings</span><span data-lang="ru">Созвон с разбором</span></h3>
+        <p style="color:var(--grey);font-size:14px;margin:0;">
+          <span data-lang="cn">共享屏幕，逐条过诊断结果，回答您所有问题。</span>
+          <span data-lang="en">Screen share, point-by-point walkthrough, any questions answered.</span>
+          <span data-lang="ru">Показываем экран, проходим по каждому пункту. Отвечаем на любые вопросы.</span>
+        </p>
+      </div>
+      <div class="card">
+        <div style="display:flex;gap:12px;align-items:center;margin-bottom:8px;"><div class="numc">3</div><span class="pill"><span data-lang="cn">第三步 · 季度合同</span><span data-lang="en">Step 3 · one quarter</span><span data-lang="ru">Шаг 3 · квартал</span></span></div>
+        <h3><span data-lang="cn">签约</span><span data-lang="en">Contract</span><span data-lang="ru">Договор</span></h3>
+        <p style="color:var(--grey);font-size:14px;margin:0;">
+          <span data-lang="cn">先签一个季度。合同写明服务范围、退出与交接条款。</span>
+          <span data-lang="en">We start with one quarter. Scope, exit terms and handover — all in the contract.</span>
+          <span data-lang="ru">Начинаем с одного квартала. В договоре — состав работ, условия выхода и передача дел.</span>
+        </p>
+      </div>
+    </div>
+    <div class="honest" style="margin-top:18px;">
+      <div class="ex">!</div>
+      <div>
+        <h3 style="margin-bottom:4px;"><span data-lang="cn">我们不承诺销售额</span><span data-lang="en">We do not promise revenue</span><span data-lang="ru">Мы не обещаем объём продаж</span></h3>
+        <p style="margin:0;color:var(--grey);font-size:14.5px;">
+          <span data-lang="cn">任何"保证多少销售额"的说法都不可信，您也清楚。我们承诺的是：每周逐项指标报表、每一笔申诉的结果、随叫随到的视频会议。</span>
+          <span data-lang="en">Any "we guarantee X million" claim is false and you know it. What we do promise: a weekly metric-by-metric report, an outcome on every appeal we file, and a call whenever you ask for one.</span>
+          <span data-lang="ru">Любое «гарантируем столько-то миллионов» — это неправда, и вы это знаете. Мы обещаем другое: еженедельный отчёт по каждой метрике, результат по каждой поданной апелляции и созвон с разбором по первому запросу.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">FAQ</p>
+    <h2><span data-lang="cn">常见<em class="hl">问题</em></span><span data-lang="en">Frequently <em class="hl">asked</em></span><span data-lang="ru">Частые <em class="hl">вопросы</em></span></h2>
+    <div style="height:14px"></div>
+    <details>
+      <summary><span data-lang="cn">你们是 代运营 公司吗？</span><span data-lang="en">Are you a "store operation" (代运营) agency?</span><span data-lang="ru">Вы — агентство «ведения магазинов» (代运营)?</span></summary>
+      <p>
+        <span data-lang="cn">不是。我们不接管您的店铺，不碰您的货款，不承诺销售额。我们只做中国团队在物理上做不了的俄罗斯端工作：对账、申诉、认证、客服、退货。选品和供应链始终在您手里。</span>
+        <span data-lang="en">No. We don't take over your store, don't touch your revenue, don't promise sales. We do only the Russia-side work your team physically cannot. Sourcing and supply stay with you.</span>
+        <span data-lang="ru">Нет. Мы не забираем магазин, не трогаем вашу выручку и не обещаем продажи. Делаем только российскую сторону, которую ваша команда физически не может.</span>
+      </p>
+    </details>
+    
+    <details>
+      <summary><span data-lang="cn">如何监督你们的工作？</span><span data-lang="en">How do we control your work?</span><span data-lang="ru">Как вас контролировать?</span></summary>
+      <p>
+        <span data-lang="cn">每周一份双语报表，逐项汇报每个指标：订单、销售额、签收率、广告占比、关键词排名、评价处理、每笔申诉及其结果。每月一次深度复盘。视频会议随叫随到。广告预算始终在您自己的平台余额上。</span>
+        <span data-lang="en">A weekly bilingual report covers every metric line by line: orders, revenue, buy-out rate, ad share, keyword positions, review handling, every appeal and its outcome. A monthly deep-dive on top. A call whenever you ask. Ad budget always stays on your own platform balance.</span>
+        <span data-lang="ru">Каждую неделю — двуязычный отчёт по каждой метрике: заказы, выручка, выкуп, ДРР, позиции по ключам, отработка отзывов, каждая апелляция и её результат. Раз в месяц — большой разбор. Созвон — по запросу в любой момент. Рекламный бюджет всегда остаётся на вашем балансе.</span>
+      </p>
+    </details>
+    <details>
+      <summary><span data-lang="cn">你们是正规运作吗？</span><span data-lang="en">Do you operate officially?</span><span data-lang="ru">Вы работаете официально?</span></summary>
+      <p>
+        <span data-lang="cn">是。签中俄双语正式合同，按月预付，每笔付款开具发票（invoice），提供结算文件。店铺账号、商品和货款始终归您所有。</span>
+        <span data-lang="en">Yes. A formal bilingual contract, monthly prepayment, an invoice for every payment, closing documents provided. The store account, goods and revenue remain yours at all times.</span>
+        <span data-lang="ru">Да. Официальный двуязычный договор, помесячная предоплата, инвойс на каждый платёж, закрывающие документы. Кабинет, товар и выручка всегда остаются вашими.</span>
+      </p>
+    </details>
+    <details>
+      <summary><span data-lang="cn">开始合作需要我们提供什么？</span><span data-lang="en">What do you need from us to start?</span><span data-lang="ru">Что нужно от нас для старта?</span></summary>
+      <p>
+        <span data-lang="cn">第一步只需要店铺链接 —— 免费诊断不需要任何权限。签约后开通操作员级别的后台权限即可。选品、采购、发货依然由您的团队负责。</span>
+        <span data-lang="en">For step one — just your store link; the free audit needs no access at all. After signing, operator-level dashboard access is enough. Sourcing, purchasing and shipping stay with your team.</span>
+        <span data-lang="ru">Для первого шага — только ссылка на магазин: бесплатный аудит не требует никаких доступов. После договора достаточно операторского доступа в кабинет. Выбор товара, закупка и отгрузка остаются за вашей командой.</span>
+      </p>
+    </details>
+    <details>
       <summary><span data-lang="cn">多快能开始工作？</span><span data-lang="en">How fast can you start?</span><span data-lang="ru">Как быстро начнёте работать?</span></summary>
       <p>
         <span data-lang="cn">诊断 3 天 → 视频会议 30 分钟 → 签约 → 签约后一周内正式开工，第一份周报在第一个完整工作周结束时发出。</span>
